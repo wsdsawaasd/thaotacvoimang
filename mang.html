@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>as1d</title>
+</head>
+<body>
+    <input id="nhapso" type="text" >
+    <input type="button" id="them" value="add" onclick="addto()">
+    <input type="button" id="hienthi" value="display" onclick="displayto()">
+    <p id="asd"></p>
+    <script>
+        var cars = [23,12,25]
+        var i = 0
+        var e ;
+        function displayto() {
+            var e = "<hr/>";
+            for (var i=0; i<cars.length; i++) {
+                e += "Element " + i + " = " + cars[i] + "<br/>";
+            }
+            document.getElementById("asd").innerHTML = e;
+
+        }
+    </script>
+</body>
+</html>
